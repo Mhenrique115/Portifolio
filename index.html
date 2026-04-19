@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Matheus Henrique — Desenvolvedor Full Stack com foco em Backend" />
+  <title>Matheus Henrique | Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="body" class="dark">
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="logo">Matheus<span>.dev</span>_</div>
+    <nav id="nav-desktop">
+      <a href="#banner">~/home</a>
+      <a href="#sobre">sobre</a>
+      <a href="#stacks">stacks</a>
+      <a href="#conquistas">conquistas</a>
+      <a href="#projetos">projetos</a>
+      <a href="#contato">contato</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">[ dark ]</button>
+      <button class="hamburger" onclick="toggleMenu()" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#banner" onclick="closeMenu()">~/home</a>
+    <a href="#sobre" onclick="closeMenu()">sobre</a>
+    <a href="#stacks" onclick="closeMenu()">stacks</a>
+    <a href="#conquistas" onclick="closeMenu()">conquistas</a>
+    <a href="#projetos" onclick="closeMenu()">projetos</a>
+    <a href="#contato" onclick="closeMenu()">contato</a>
+  </div>
+
+  <!-- SECTION 1: BANNER -->
+  <section id="banner">
+    <canvas id="matrix-canvas"></canvas>
+    <div class="banner-content">
+      <div class="prompt-line"><span class="user">matheus@dev</span>:~$&nbsp;<span class="cmd">node</span> portfolio.ts</div>
+      <h1 class="main-title">
+        &gt; Olá, eu sou<br />
+        <span class="name-highlight">Matheus Henrique</span><span class="cursor"></span>
+      </h1>
+      <p class="subtitle">
+        <span class="kw">const</span> role = <span class="str">"Desenvolvedor Full Stack"</span><br />
+        <span class="kw">const</span> focus = <span class="str">"Backend"</span> | <span class="str">"APIs"</span> | <span class="str">"Clean Architecture"</span>
+      </p>
+      <a href="assets/pdf/curriculo_matheus_brito_att.docx.pdf" download="Matheus_Henrique_Curriculo.pdf" class="dl-btn">[ Baixar Currículo (PDF) ]</a>
+    </div>
+  </section>
+
+  <!-- SECTION 2: SOBRE -->
+  <section id="sobre">
+    <div class="section-inner">
+      <div class="section-label">about</div>
+      <h2 class="sec-title">Apresentação</h2>
+      <div class="two-col">
+        <div class="bio">
+          <span class="comment">/**</span>
+          <p>
+            <span class="kw">export const</span> <span class="fn">developer</span> = () =&gt; &#123;<br />
+            &nbsp;&nbsp;<span class="kw">return</span> &#123;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;nome: <span class="str">"Matheus Henrique"</span>,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;formacao: <span class="str">"Análise e Desenvolvimento de Sistemas"</span>,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;foco: [<span class="str">"Backend"</span>, <span class="str">"Node.js"</span>, <span class="str">"TypeScript"</span>],<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;status: <span class="str">"Disponível para oportunidades"</span><br />
+            &nbsp;&nbsp;&#125;<br />
+            &#125;
+          </p>
+          <p class="bio-text">
+            Olá, sou Matheus Henrique, apaixonado por programação e tecnologia, inspirado no desenvolvimento de aplicações que facilitam a vida do usuário final. Atualmente atuo em TI com suporte técnico, análise de sistemas e desenvolvimento de software, aplicando disciplina e foco adquiridos em experiências anteriores na educação física, no serviço militar e na logística. Meu interesse está no backend, trabalhando com Node.js, TypeScript, Express.js e modelagem de dados com Prisma ORM e SQL.
+          </p>
+        </div>
+        <div>
+          <div class="profile-frame">
+            <img src="assets/img/perfil.jpg" alt="Foto de Matheus Henrique" class="profile-photo" />
+          </div>
+          <div class="profile-label">// perfil.jpg</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: STACKS -->
+  <section id="stacks">
+    <div class="section-inner">
+      <div class="section-label">skills</div>
+      <h2 class="sec-title">Stacks &amp; Habilidades</h2>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <div class="stack-icon node">Node</div>
+          <div class="stack-name">Node.js</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon ts">TS</div>
+          <div class="stack-name">TypeScript</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon react">Rx</div>
+          <div class="stack-name">React.js</div>
+          <div class="stack-tag">Iniciante</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon pg">PG</div>
+          <div class="stack-name">PostgreSQL</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon prisma">Pr</div>
+          <div class="stack-name">Prisma ORM</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon docker">Dk</div>
+          <div class="stack-name">Docker</div>
+          <div class="stack-tag">Iniciante</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon git">Git</div>
+          <div class="stack-name">Git</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon rest">REST</div>
+          <div class="stack-name">REST APIs</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon sql">SQL</div>
+          <div class="stack-name">SQL</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon n8n">n8n</div>
+          <div class="stack-name">n8n</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon express">Ex</div>
+          <div class="stack-name">Express</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon ai">AI</div>
+          <div class="stack-name">AI</div>
+          <div class="stack-tag">Intermediário</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon java">Jv</div>
+          <div class="stack-name">Java</div>
+          <div class="stack-tag">Iniciante</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon js">JS</div>
+          <div class="stack-name">JavaScript</div>
+          <div class="stack-tag">Iniciante</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon oracle">Or</div>
+          <div class="stack-name">Oracle</div>
+          <div class="stack-tag">Iniciante</div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-icon python">Py</div>
+          <div class="stack-name">Python</div>
+          <div class="stack-tag">Iniciante</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CONQUISTAS -->
+  <section id="conquistas">
+    <div class="section-inner">
+      <div class="section-label">achievements</div>
+      <h2 class="sec-title">Conquistas</h2>
+      <div class="timeline">
+        <div class="tl-item active">
+          <div class="tl-year">2026 — Atual</div>
+          <div class="tl-title"><span class="tl-check">[✓]</span> Desenvolvedor Backend</div>
+          <div class="tl-desc">Atuação em desenvolvimento de sistemas web com Node.js, TypeScript e React. Implementação de APIs REST com autenticação JWT e arquitetura limpa.</div>
+        </div>
+        <div class="tl-item active">
+          <div class="tl-year">2025 — 2027</div>
+          <div class="tl-title"><span class="tl-check">[✓]</span> Análise e Desenvolvimento de Sistemas na Rede de Ensino Doctum</div>
+          <div class="tl-desc">Aprendizado contínuo em fundamentos de programação, LGPD e cybersegurança, com foco em desenvolvimento e boas práticas de TI.</div>
+        </div>
+        <div class="tl-item active">
+          <div class="tl-year">2023 — Atual</div>
+          <div class="tl-title"><span class="tl-check">[✓]</span> Auxiliar de T.I.</div>
+          <div class="tl-desc">Primeiro contato profissional com a área de Tecnologia da Informação, colocando em prática fundamentos de programação, lógica e infraestrutura. Atuação com relatórios em SQL (Dashboard Sankhya e SQL Developer Oracle), iReports Sankhya, Excel e pequenas automações com Python, Java e n8n.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PROJETOS -->
+  <section id="projetos">
+    <div class="section-inner">
+      <div class="section-label">repositories</div>
+      <h2 class="sec-title">Projetos</h2>
+      <div class="proj-grid">
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <div class="file-icon js-icon">JS</div>
+            <div class="proj-name">Pokemon Game</div>
+            <div class="proj-arch">Front-end</div>
+          </div>
+          <p class="proj-desc">Jogo de Pokémon da 5ª geração onde o jogador precisa acertar o nome do Pokémon com base na silhueta exibida.</p>
+          <div class="proj-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Mhenrique115/Pokemon-_Game" target="_blank" rel="noopener">[GitHub]</a>
+            <a href="https://mhenrique115.github.io/Pokemon-_Game/" target="_blank" rel="noopener">[Demo]</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <div class="file-icon ts-icon">TS</div>
+            <div class="proj-name">API Chamados</div>
+            <div class="proj-arch">Backend</div>
+          </div>
+          <p class="proj-desc">API para gestão de informações de um sistema de tarefas, conectada ao Supabase e consumida pelo front-end. Deploy no Render.</p>
+          <div class="proj-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Express</span>
+            <span class="tag">Prisma</span>
+            <span class="tag">Supabase</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Mhenrique115/API_Chamados" target="_blank" rel="noopener">[GitHub]</a>
+            <a href="#" target="_blank" rel="noopener">[Demo]</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <div class="file-icon js-icon">JS</div>
+            <div class="proj-name">Sistema de Tarefas</div>
+            <div class="proj-arch">Dashboard</div>
+          </div>
+          <p class="proj-desc">Sistema de chamados local com autenticação JWT, dashboard, controle de cargos e cálculo de tarefas para freelancers. Recebe dados da API Chamados.</p>
+          <div class="proj-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Mhenrique115/System_Task" target="_blank" rel="noopener">[GitHub]</a>
+            <a href="https://mhenrique115.github.io/System_Task/login.html" target="_blank" rel="noopener">[Demo]</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CONTATO -->
+  <section id="contato">
+    <div class="section-inner contact-center">
+      <div class="section-label">contact</div>
+      <h2 class="sec-title">Contatos</h2>
+      <p class="contact-sub"><span class="accent2">&gt;</span> Disponível para oportunidades e colaborações.</p>
+      <div class="contact-grid">
+        <a href="mailto:matheusbrito.tech@gmail.com" class="contact-link">
+          <span class="contact-icon">@</span>
+          <span>E-mail</span>
+        </a>
+        <a href="https://github.com/Mhenrique115" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">⊙</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/matheushenrique1504/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">in</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://www.instagram.com/matheush.tech/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">▣</span>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-user">matheus@dev</span>:~$ <span class="footer-comment">// made with Node.js + TypeScript + &lt;3</span>
+    <div class="footer-copy">© 2025 Matheus Henrique</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
