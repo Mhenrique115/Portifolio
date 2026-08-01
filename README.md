@@ -26,7 +26,7 @@ Antes de começar, certifique-se de ter instalado:
 ### Clonando o repositório
 
 ```bash
-git clone https://github.com/Mhenrique115/Portifolio.git
+git clone https://github.com/Mathz36/Portifolio.git
 cd portfolio
 ```
 
@@ -86,7 +86,7 @@ Edite o `index.html` para atualizar:
 2. Vá em **Settings → Pages**.
 3. Em *Source*, selecione **Branch: main** e pasta **/ (root)**.
 4. Clique em **Save**.
-5. Acesse: `https://Mhenrique115.github.io/Portifolio` (ou o nome correto do seu repositório).
+5. Acesse: `https://Mathz36.github.io/Portifolio` (ou o nome correto do seu repositório).
 
 ## 🛠️ Tecnologias usadas
 

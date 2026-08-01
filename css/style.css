@@ -572,6 +572,7 @@ h1.main-title {
 
 .file-icon.ts-icon { color: #3178c6; }
 .file-icon.js-icon { color: #f7df1e; }
+.file-icon.py-icon { color: #3776ab; }
 
 .proj-name {
   font-size: 13px;
